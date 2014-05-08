@@ -1,0 +1,17 @@
+{
+  "uuid": "da1d5951-3ad9-4ae1-9c02-ba80f49a6e4e",
+  "shortName": "peb-typer",
+  "longName": "peb-typer",
+  "companyName": "KeepFlying",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
