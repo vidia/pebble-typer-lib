@@ -9,9 +9,10 @@ struct typer_data {
   int tickTime;
   char* buffer; 
   int cont; 
+  bool finished;
 };
 
-struct typer_data *init_typer(char* text, TextLayer* tl, int time, void (*onFinish)());
+struct typer_data *init_typer(char* text, TextLayer* tl, int time, void (*onFinish)(), int start_index);
 void destroy_typer(struct typer_data* data);
 void typeTextInTextLayer(void *data);
 void typer_cancel(struct typer_data* data);
