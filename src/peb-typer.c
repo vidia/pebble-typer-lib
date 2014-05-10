@@ -15,12 +15,12 @@ static void window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  text_layer = text_layer_create((GRect) { .origin = { 0, 72 }, .size = { bounds.size.w, 20 } });
+  text_layer = text_layer_create((GRect) { .origin = { 0, 72 }, .size = { bounds.size.w, 60 } });
   //text_layer_set_text(text_layer, "Press a button");
   text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(text_layer));
 
-  struct typer_data * data = init_typer("This is text", text_layer, 200, animFinished); 
+  struct typer_data * data = init_typer("This text is being\ntyped by the pebble\ntyping library\n--by David.", text_layer, 200, animFinished, 0); 
   typeTextInTextLayer((void*) data);
 }
 
